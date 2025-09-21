@@ -2,6 +2,7 @@ export default function handler(req, res) {
   try {
     const now = new Date();
     const hour = now.getHours();
+    const minutes = now.getMinutes();
     let message = '';
 
     if (hour < 6) message = 'Доброй ночи!';
@@ -12,7 +13,9 @@ export default function handler(req, res) {
     res.status(200).json({ 
       success: true,
       message,
-      hour
+      hour,
+      minutes,
+      time: `${hour}:${minutes.toString().padStart(2, '0')}`
     });
   } catch (error) {
     res.status(500).json({ 
