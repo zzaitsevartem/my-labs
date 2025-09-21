@@ -1,6 +1,6 @@
 {
-  "short_name": "MyLabs",
-  "name": "MyLabs - 3 курс",
+  "short_name": "CodeLabs",
+  "name": "CodeLabs - 3 курс",
   "icons": [
     {
       "src": "logo.png",
@@ -8,7 +8,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": ".",
+  "start_url": "/?source=pwa",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
