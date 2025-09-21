@@ -9,7 +9,7 @@ const Lab8: React.FC = () => {
 
   const showRandomAd = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/random-ad');
+      const response = await fetch('/api/random-ad');
       const data = await response.json();
       if (data.success) {
         setAdImage(data.imageUrl);
@@ -21,7 +21,7 @@ const Lab8: React.FC = () => {
 
   const showGreeting = async () => {
   try {
-    const response = await fetch('http://localhost:5000/api/time-greeting');
+    const response = await fetch('/api/time-greeting');
     const data = await response.json();
     if (data.success) {
       setGreeting(`${data.message} Сейчас ${data.time}`); 

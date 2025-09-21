@@ -10,7 +10,7 @@ const Lab9: React.FC = () => {
   const detectBrowser = async () => {
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/browser-info');
+      const response = await fetch('/api/browser-info');
       const data = await response.json();
       if (data.success) {
         setBrowserInfo(data);
