@@ -1,12 +1,9 @@
-import { Request, Response } from 'express';
-
-const getRandomAd = (req: Request, res: Response) => {
+export default function handler(req, res) {
   try {
-    // Генерируем случайное число от 1 до 3
     const randomNum = Math.floor(Math.random() * 3) + 1;
     const imageUrl = `/images/ads/ad${randomNum}.jpg`;
     
-    res.json({ 
+    res.status(200).json({ 
       success: true,
       imageUrl 
     });
@@ -16,6 +13,4 @@ const getRandomAd = (req: Request, res: Response) => {
       error: 'Server error' 
     });
   }
-};
-
-export default getRandomAd;
+}

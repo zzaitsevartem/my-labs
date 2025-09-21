@@ -1,6 +1,4 @@
-import { Request, Response } from 'express';
-
-const getTimeGreeting = (req: Request, res: Response) => {
+export default function handler(req, res) {
   try {
     const now = new Date();
     const hour = now.getHours();
@@ -11,7 +9,7 @@ const getTimeGreeting = (req: Request, res: Response) => {
     else if (hour < 18) message = 'Добрый день!';
     else message = 'Добрый вечер!';
 
-    res.json({ 
+    res.status(200).json({ 
       success: true,
       message,
       hour
@@ -22,6 +20,4 @@ const getTimeGreeting = (req: Request, res: Response) => {
       error: 'Server error' 
     });
   }
-};
-
-export default getTimeGreeting;
+}
