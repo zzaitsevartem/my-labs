@@ -1,0 +1,151 @@
+.section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e9ecef;
+  
+  h2 {
+    color: #6f42c1;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.errors {
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  
+  p {
+    color: #e53e3e;
+    margin: 0.5rem 0;
+    font-weight: 500;
+  }
+}
+
+.form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+  
+  label {
+    display: block;
+    color: #6f42c1;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    
+    &:focus {
+      outline: none;
+      border-color: #6f42c1;
+      box-shadow: 0 0 0 3px rgba(111, 66, 193, 0.1);
+    }
+    
+    &::placeholder {
+      color: #adb5bd;
+    }
+  }
+}
+
+.passwordHints {
+  margin-top: 0.5rem;
+  
+  small {
+    display: block;
+    color: #6c757d;
+    font-size: 0.8rem;
+    margin: 0.2rem 0;
+    
+    &:before {
+      content: "💡 ";
+    }
+  }
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #495057;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: #6f42c1;
+  }
+  
+  input[type="radio"] {
+    margin-right: 0.8rem;
+    width: 18px;
+    height: 18px;
+    accent-color: #6f42c1;
+    cursor: pointer;
+  }
+}
+
+.submitButton {
+  width: 100%;
+  background: #6f42c1;
+  color: #ffffff;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(111, 66, 193, 0.3);
+  
+  &:hover {
+    background: #5a32a3;
+    box-shadow: 0 4px 12px rgba(111, 66, 193, 0.4);
+    transform: translateY(-1px);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 1.5rem;
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .radioGroup {
+    gap: 0.6rem;
+  }
+}

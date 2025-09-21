@@ -1,0 +1,482 @@
+.lab7 {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+
+.backButton {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background: #6f42c1;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(111, 66, 193, 0.3);
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1000;
+  font-size: 0.9rem;
+  
+  &:hover {
+    background: #5a32a3;
+    box-shadow: 0 4px 12px rgba(111, 66, 193, 0.4);
+    transform: translateY(-1px);
+  }
+}
+
+.title {
+  color: #6f42c1;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: #5a32a3;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+.frameSection {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e9ecef;
+  text-align: center;
+  
+  h2 {
+    color: #6f42c1;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.5rem;
+  }
+  
+  p {
+    color: #6c757d;
+    margin-bottom: 2rem;
+  }
+}
+
+.frameMenu {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.frameMenuButton {
+  background: #6f42c1;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(111, 66, 193, 0.3);
+  
+  &:hover {
+    background: #5a32a3;
+    box-shadow: 0 4px 12px rgba(111, 66, 193, 0.4);
+    transform: translateY(-2px);
+  }
+}
+
+.framesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.frame {
+  background: #f8f9fa;
+  border: 2px solid #6f42c1;
+  border-radius: 12px;
+  padding: 1rem;
+  min-height: 500px;
+  
+  h4 {
+    color: #6f42c1;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.frameContent {
+  height: 400px;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 6px;
+}
+
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #6c757d;
+  font-size: 1.1rem;
+  background: #f8f9fa;
+  border: 2px dashed #dee2e6;
+  border-radius: 8px;
+}
+
+.modalSection {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e9ecef;
+  text-align: center;
+  position: relative;
+  
+  h2 {
+    color: #6f42c1;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.5rem;
+  }
+  
+  p {
+    color: #6c757d;
+    margin-bottom: 2rem;
+  }
+}
+
+.openModalButton {
+  background: #6f42c1;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(111, 66, 193, 0.3);
+  
+  &:hover {
+    background: #5a32a3;
+    box-shadow: 0 4px 12px rgba(111, 66, 193, 0.4);
+    transform: translateY(-2px);
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  
+  h3 {
+    color: #6f42c1;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+  }
+}
+
+.modalContent {
+  margin-bottom: 2rem;
+  
+  p {
+    margin: 1rem 0;
+    color: #495057;
+    line-height: 1.5;
+    
+    strong {
+      color: #6f42c1;
+    }
+  }
+}
+
+.modalButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.okButton {
+  background: #28a745;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background: #218838;
+    transform: translateY(-1px);
+  }
+}
+
+.cancelButton {
+  background: #dc3545;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background: #c82333;
+    transform: translateY(-1px);
+  }
+}
+
+.slideshowSection {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e9ecef;
+  text-align: center;
+  
+  h2 {
+    color: #6f42c1;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.slideshow {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slideImage {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid #6f42c1;
+  box-shadow: 0 8px 25px rgba(111, 66, 193, 0.3);
+  margin-bottom: 1.5rem;
+}
+
+.slideControls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.slideControlButton {
+  background: #6f42c1;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background: #5a32a3;
+    transform: translateY(-2px);
+  }
+}
+
+.playButton {
+  background: #5a32a3;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background: #4a2a8a;
+    transform: translateY(-2px);
+  }
+}
+
+.slideInfo {
+  color: #6f42c1;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid #e9ecef;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    border-color: #6f42c1;
+    transform: scale(1.1);
+  }
+}
+
+.activeThumbnail {
+  border-color: #6f42c1;
+  border-width: 3px;
+  box-shadow: 0 0 0 2px rgba(111, 66, 193, 0.3);
+}
+
+@media (max-width: 768px) {
+  .lab7 {
+    padding: 1rem;
+  }
+  
+  .backButton {
+    top: 0.8rem;
+    left: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .frameSection,
+  .modalSection,
+  .slideshowSection {
+    padding: 1.5rem;
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .frameMenu {
+    gap: 0.5rem;
+  }
+  
+  .frameMenuButton {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .framesContainer {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .frame {
+    min-width: 200px;
+    padding: 1rem;
+  }
+  
+  .frameContent {
+    min-height: 100px;
+    font-size: 1rem;
+  }
+  
+  .openModalButton {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .modal {
+    padding: 1.5rem;
+    
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  .modalButtons {
+    flex-direction: column;
+  }
+  
+  .okButton,
+  .cancelButton {
+    width: 100%;
+  }
+  
+  .slideImage {
+    max-height: 300px;
+  }
+  
+  .slideControls {
+    gap: 0.5rem;
+  }
+  
+  .slideControlButton,
+  .playButton {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .thumbnail {
+    width: 50px;
+    height: 50px;
+  }
+}

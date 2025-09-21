@@ -1,0 +1,170 @@
+.lab3 {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(111, 66, 193, 0.1);
+  border-radius: 12px;
+}
+
+.backButton {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background: #6f42c1;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(111, 66, 193, 0.3);
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1000;
+  font-size: 0.9rem;
+  
+  &:hover {
+    background: #5a32a3;
+    box-shadow: 0 4px 12px rgba(111, 66, 193, 0.4);
+    transform: translateY(-1px);
+  }
+}
+
+.title {
+  color: #6f42c1;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #5a32a3;
+  font-size: 1.1rem;
+}
+
+.sectionTitle {
+  color: #6f42c1;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 0.5rem;
+}
+
+.quoteSection {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border-left: 4px solid #6f42c1;
+}
+
+.quoteBox {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #495057;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.photoSection {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.photoContainer {
+  text-align: center;
+}
+
+.photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid #6f42c1;
+  box-shadow: 0 4px 12px rgba(111, 66, 193, 0.2);
+}
+
+.personalInfo {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.infoContent {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.profilePhoto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #6f42c1;
+}
+
+.infoText {
+  p {
+    margin: 0.8rem 0;
+    color: #495057;
+    
+    strong {
+      color: #6f42c1;
+    }
+  }
+}
+
+.refreshSection {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.refreshButton {
+  background: #6f42c1;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: #5a32a3;
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 768px) {
+  .lab3 {
+    padding: 1rem;
+  }
+  
+  .infoContent {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .profilePhoto {
+    width: 120px;
+    height: 120px;
+  }
+}

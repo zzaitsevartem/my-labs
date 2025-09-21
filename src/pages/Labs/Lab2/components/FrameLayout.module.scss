@@ -1,0 +1,70 @@
+.frameLayout {
+  border: 2px solid #6f42c1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(111, 66, 193, 0.15);
+}
+
+.headerFrame {
+  background: linear-gradient(135deg, #6f42c1 0%, #5a32a3 100%);
+  padding: 1rem 2rem;
+  color: white;
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+    h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+  
+  .logoImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  min-height: 500px;
+}
+
+.navigationFrame {
+  background: #f8f9fa;
+  border-right: 2px solid #6f42c1;
+  padding: 1.5rem;
+}
+
+.contentFrame {
+  background: #ffffff;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .mainContainer {
+    grid-template-columns: 1fr;
+  }
+  
+  .navigationFrame {
+    border-right: none;
+    border-bottom: 2px solid #6f42c1;
+  }
+  
+  .headerFrame {
+    padding: 1rem;
+    
+    .logo {
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

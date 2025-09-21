@@ -1,0 +1,135 @@
+.lab9 {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+
+  h1 {
+    color: #6f42c1;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 2rem;
+  }
+}
+
+.backButton {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background: #6f42c1;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background: #5a32a3;
+    transform: translateY(-1px);
+  }
+}
+
+.section {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e9ecef;
+  text-align: center;
+}
+
+.detectButton {
+  background: #6f42c1;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 2rem;
+
+  &:hover:not(:disabled) {
+    background: #5a32a3;
+    transform: translateY(-2px);
+  }
+
+  &:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+  }
+}
+
+.infoContainer {
+  text-align: left;
+  
+  h2 {
+    color: #6f42c1;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 4px solid #6f42c1;
+}
+
+.label {
+  font-weight: 600;
+  color: #6f42c1;
+  margin-bottom: 0.5rem;
+}
+
+.value {
+  color: #495057;
+  font-size: 1.1rem;
+}
+
+.rawInfo {
+  background: #e9ecef;
+  padding: 1rem;
+  border-radius: 6px;
+  
+  h3 {
+    color: #6f42c1;
+    margin-bottom: 0.5rem;
+  }
+  
+  code {
+    background: #ffffff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    word-break: break-all;
+  }
+}
+
+@media (max-width: 768px) {
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .lab9 {
+    padding: 1rem;
+  }
+}

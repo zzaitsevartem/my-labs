@@ -1,0 +1,86 @@
+.lab2 {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.backButton {
+  position: fixed;
+  top: 1rem;
+  left: 0.2rem;
+  background: #6f42c1;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(111, 66, 193, 0.3);
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1000;
+  font-size: 0.9rem;
+  
+  &:hover {
+    background: #5a32a3;
+    box-shadow: 0 4px 12px rgba(111, 66, 193, 0.4);
+    transform: translateY(-1px);
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(111, 66, 193, 0.1);
+  border: 1px solid #e9ecef;
+}
+
+.title {
+  color: #6f42c1;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: #5a32a3;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.mainContent {
+  text-align: center;
+  padding: 2rem;
+  
+  h2 {
+    color: #6f42c1;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    color: #495057;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .lab2 {
+    padding: 1rem;
+  }
+  
+  .backButton {
+    top: 0.8rem;
+    left: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+  }
+}

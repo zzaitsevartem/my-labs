@@ -1,0 +1,99 @@
+.lab8 {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+
+  h1 {
+    color: #6f42c1;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 2rem;
+  }
+}
+
+.backButton {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background: #6f42c1;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(111, 66, 193, 0.3);
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1000;
+  font-size: 0.9rem;
+  
+  &:hover {
+    background: #5a32a3;
+    box-shadow: 0 4px 12px rgba(111, 66, 193, 0.4);
+    transform: translateY(-1px);
+  }
+}
+
+.section {
+  background: #ffffff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e9ecef;
+
+  h2 {
+    color: #6f42c1;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
+.button {
+  background: #6f42c1;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto 1.5rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: #5a32a3;
+    transform: translateY(-2px);
+  }
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.adImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #6f42c1;
+  box-shadow: 0 4px 12px rgba(111, 66, 193, 0.3);
+}
+
+.greeting {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #6f42c1;
+  font-weight: 600;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #6f42c1;
+}
